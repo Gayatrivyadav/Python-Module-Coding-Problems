@@ -1,0 +1,23 @@
+# Insertion sort
+def sort(arr):
+    n = len(arr)
+    for i in range(0,n):
+        key = arr[i]
+        j = i - 1
+        while j>=0 and arr[j]>key:
+           arr[j+1] = arr[j]
+           j -= 1
+        arr[j+1] = key    
+
+
+                
+def printarray(arr):
+    n = len(arr)
+    for i in range(0,n):
+        print(arr[i],end=" ")
+
+arr = [1,9,6,5,8]        
+sort(arr);        
+printarray(arr)              
+Time Complexity: O(n^2)
+Space Compexity: O(1)
