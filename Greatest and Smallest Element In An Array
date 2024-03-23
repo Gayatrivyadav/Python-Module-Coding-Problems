@@ -1,0 +1,21 @@
+#function to get the greatest element in an array
+def greatest(arr):
+  max = arr[0]
+  n = len(arr)
+  for i in range(n):
+      if(arr[i] > max):
+          max = arr[i]
+  return max  
+#Function to get the smallest element in an array  
+def smallest(arr):
+    min = arr[0];
+    n = len(arr)
+    for i in range(n):
+        if(arr[i]<min):
+            min = arr[i]
+    return min        
+
+
+arr = [1,9,6,5,8,123]        
+print("The greatest element in array is:", greatest(arr))
+print("The smallest element in an array is:", smallest(arr))
