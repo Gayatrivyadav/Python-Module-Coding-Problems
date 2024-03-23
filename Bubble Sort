@@ -1,0 +1,21 @@
+#Function sort the array
+def sort(arr):
+    n = len(arr)
+    for i in range(0,n):
+        swapped = False
+        for j in range(0,n-1):
+            if arr[j] >arr[j+1]:
+                arr[j],arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        if(swapped == False):
+            break
+
+#Function to print the array
+def printarray(arr):
+    n = len(arr)
+    for i in range(0,n):
+        print(arr[i],end=" ")
+
+arr = [1,9,6,5,8]        
+sort(arr);        
+printarray(arr)              
