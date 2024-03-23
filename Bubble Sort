@@ -18,4 +18,7 @@ def printarray(arr):
 
 arr = [1,9,6,5,8]        
 sort(arr);        
-printarray(arr)              
+printarray(arr)  
+
+Time Complexity: O(n^2)
+Space Complexity: O(1)
