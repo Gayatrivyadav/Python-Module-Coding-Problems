@@ -1,0 +1,10 @@
+# PYthon program for minimum element
+
+x = [4,10,5,7,8,9]
+y=[]
+n = len(x)
+min = x[0]
+for i in x:
+    if(i  > min):
+        min = i
+print(min)    
