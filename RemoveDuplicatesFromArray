@@ -1,0 +1,6 @@
+#remove duplicates from array
+original_list=[1,1,2,2,5,7,9,6,3,2,1,2]
+newlist=[]
+original_list.sort()
+[newlist.append(x) for x in original_list if x not in newlist]
+print(newlist)
