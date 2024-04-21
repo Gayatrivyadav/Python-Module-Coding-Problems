@@ -1,0 +1,8 @@
+# PYthon program for maximum element
+
+x = [4,10,5,7,8,9]
+max = x[0]
+for i in x:
+    if(i  > max):
+        max = i
+print(max)    
